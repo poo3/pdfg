@@ -1,5 +1,6 @@
 class ThingsController < ApplicationController
   def show
+    @bank = Bank.first
     respond_to do |format|
       format.html
       format.pdf do
